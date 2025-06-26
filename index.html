@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrateChess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>♔ StrateChess ♛</h1>
+            <p style="color: #666; font-size: 1rem; margin-top: 5px;">by ❤️ Dipangshu134</p>
+        </div>
+        
+        <div class="game-info">
+            <div class="player-info active" id="white-player">
+                ♔ You (⚪White)
+            </div>
+            <div class="player-info" id="black-player">
+                🤖 Bot (⚫Black)
+            </div>
+        </div>
+
+        <div class="moves-log-container">
+            <h3>Game Moves</h3>
+            <div class="moves-log" id="moves-log">
+                <div class="no-moves">No moves yet</div>
+            </div>
+        </div>
+
+        <div class="chessboard" id="chessboard"></div>
+
+        <div class="game-controls">
+            <button class="btn btn-primary" onclick="newGame()">New Game</button>
+            <button class="btn btn-secondary" onclick="undoMove()" id="undo-btn">Undo Move</button>
+        </div>
+
+        <div class="status-message" id="status-message">Your turn - Move a white piece</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
